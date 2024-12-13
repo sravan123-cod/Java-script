@@ -1,0 +1,61 @@
+<html>
+<head>
+    <style>
+    body.dark {
+    color: white;
+        background: black;
+        }
+        button {
+            display: block;
+            margin: 5px;
+        }
+        .textEntry {
+            margin-top: 12px;
+            margin-bottom: 15px;
+        
+        }
+        
+        </style>
+
+
+
+</head>
+<body>
+    <h1>The Scary Hospital</h1>
+
+    <p id="story">There is a hospital in there the were admiting and the hospital have some bands one is red color and one is green color
+    The redcolor bands indecate the people who are dead and the green color indecates the people whoare alive . The hospital have some rules
+    that the people should come back to the romes before 10o clock and there will be th tools in the basement and one of the person is going tothe basement
+    and one doctor saw her and he even was going to the basement they both were going to the basement by the lift and when they reached the basement
+    the doctor saw a person in the basement and he is walking towards him and when he saw his hand it has a red band and suddenly he closed the door because 
+    he know that the person was treated by him and he is  dead . 
+    </p>
+    
+    <button onclick="goDark()">Get In The Mood</button>
+    <div class="textEntry">Type your name here, if you dare: <input type="text" id="name"></div>
+    <button onclick ="typeAndScream()">Please, Please Don't Click Me</button>
+    <button onclick="finishTheStory()">Tell Me What Happened!</button>
+    <script>
+    function typeAndScream() {
+            var personName = document.getElementById("name").value;
+            alert("I told you not to do that " + personName);
+        }
+        function goDark() {
+
+            document.body.className = "dark";
+        }
+        function finishTheStory() {
+            document.getElementById("story").innerHTML = "And the person in the lift raised up his hand and it has an red band";
+
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
