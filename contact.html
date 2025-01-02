@@ -6,7 +6,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #2bff00;
+    background-color: #700bf5;
 }
 li {
     float: left;
@@ -21,6 +21,55 @@ li a {
 li a:hover {
     background-color: #a3f708;
 }
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+     * {box-sizing: border-box;}
+input[type=text], select, textarea {
+
+width: 100%;
+
+padding: 12px;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+box-sizing: border-box;
+
+margin-top: 6px;
+
+margin-bottom: 16px;
+
+resize: vertical;
+
+}
+input[type=submit] {
+       background-color: #04AA6D;
+       color: white;
+       padding: 12px 20px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+
+
+
+
+
 </style>
     
 
@@ -35,9 +84,37 @@ li a:hover {
         
         </ul>
 
-<p><center>Thi is Contact page</center></p>       
+<h2><center>Contact Form</center></h2>
+<div class="container">       
+<form>
+    First Name
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    Last  Name
+    <input type="text" id="lname" name="lastname"  placeholder="Your last name ..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="Russia">Russia</option>
+    <option value="Germany">Germany</option>
+    <option value="United Kingdoms">United Kingdoms</option>
+    <option value="France">France</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Canada">Canada</option>
+    <option value="China">China</option>
+    </select>
 
 
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<input type="submit" value="submit">
+</form>
+</div>
 
 
 
